@@ -1,0 +1,100 @@
+Task Sheet for Assignment Number 1:
+
+1. Calculate the average score for 1 student who took 3 quizzes.
+2. Input   -3 Quiz scores
+	int sc1, sc2, sc3;
+3. Output--avg      float avg;
+4. Processing avg = (sc1 + sc2 + sc3) / 3.0;
+5. special concerns -- divide by 3.0 to avoid Int. Division
+
+Screen Drawing:
+Enter quiz 1: x
+Enter quiz 2: x
+Enter quiz 3: x
+
+Quiz 1: x
+Quiz 2: x
+Quiz 3: x
+Average: x.x
+
+cout << “Quiz 1: “ << sc1 << endl;
+
+Oval (Start) → Parallelogram (Input) → Rectangle  → Parallelogram (Output)→ Oval (End)	----------------> 
+		|			/				|
+		v							v
+	   /					
+		|
+		v		/
+
+
+
+(Flowchart not showing up, but it is on Google Drive)
+
+
+
+
+
+
+
+
+
+
+
+
+Pseudocode:
+1. int sc1, sc2, sc3;
+	float avg;
+
+	Display “Enter Quiz 1:”
+	Input a value into sc1
+	Display “Enter Quiz 2:”
+	Input a value into sc2
+	Display “Enter Quiz 3:”
+	Input a value into sc3
+
+	avg = (sc1 + sc2 + sc3) / 3.0
+
+	Display blank line
+	Display “Quiz 1:” + sc1	(cout << “Quiz 1:” << sc1 << endl;)
+	Display “Quiz 2:” + sc2
+	Display “Quiz 3:” + sc3
+	Display “Average:” + avg
+
+
+
+
+
+
+
+
+
+
+//This program calculates a student's average over three quizzes.
+#include <iostream>
+using namespace std;
+int main()
+
+{
+	int score1, score2, score3;
+		float average;
+		
+		cout << "Enter Quiz 1:";
+		cin >> score1;
+		cout << "Enter Quiz 2:";
+		cin >> score2;
+		cout << "Enter Quiz 3:";
+		cin >> score3;
+		
+        average = (score1 + score2 + score3) / 3.0;
+		
+		cout << endl;
+		cout << "Quiz 1:" << score1 << endl;
+		cout << "Quiz 2:" << score2 << endl;
+		cout << "Quiz 3:" << score3 << endl;
+		cout << "Average:" << average;
+		
+		return 0;
+}
+
+//Trace: Score1 : 65 (10) ; Score2: 80 (12) ; Score3: 65 (14) ; Average: 70 (15).
+
